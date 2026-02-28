@@ -16,3 +16,8 @@ meta:
   layout: admin
   requiresAuth: true
 </route>
+<!-- 对应二级路由中的children -->
+<!-- <route lang="yaml">
+meta:
+  layout: setting
+</route> -->

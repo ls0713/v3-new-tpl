@@ -10,6 +10,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import path from 'path'
 import { readFileSync } from 'fs'
 import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
 
 // 读取 package.json
 const pkg = JSON.parse(readFileSync('./package.json', 'utf-8'))
@@ -27,6 +28,9 @@ export default defineConfig(({ mode }) => ({
     Pages({
       dirs: 'src/pages',
       routeBlockLang: 'yaml'
+    }),
+    Layouts({
+      layoutsDirs: 'src/layouts'
     }),
     AutoImport({
       imports: ['vue'],
