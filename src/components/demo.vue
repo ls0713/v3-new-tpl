@@ -1,7 +1,16 @@
 <template>
-  <el-button @click="gets">clicks</el-button>
+  <el-button
+    @click="gets"
+  >
+    clicks
+  </el-button>
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button
+      type="button"
+      @click="count++"
+    >
+      count is {{ count }}
+    </button>
   </div>
 </template>
 

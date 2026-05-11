@@ -1,6 +1,6 @@
 <template>
   <div class="text-red-500 font-bold">
-11
+    11
   </div>
 </template>
 
